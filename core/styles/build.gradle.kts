@@ -34,4 +34,7 @@ dependencies {
 
     /** Kotlin */
     implementation(Dependencies.kotlinCoreKtx)
+
+    /** Android */
+    implementation(Dependencies.material)
 }

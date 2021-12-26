@@ -13,7 +13,7 @@ object Versions {
     const val constraintLayout = "2.1.2"
 
     /** LifeCycle */
-    const val lifecycleRuntime = "2.4.0"
+    const val lifecycle = "2.4.0"
 
     /** Hilt */
     const val hiltViewModel = "1.0.0-alpha03"

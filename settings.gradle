@@ -7,7 +7,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Satellites App"
 include ':app'
-include ':core:base'
 include ':core:utils'
 include ':core:cache'
 include ':core:styles'

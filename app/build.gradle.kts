@@ -49,6 +49,12 @@ android {
 
 dependencies {
 
+    /** Local */
+    implementation(project(CoreModules.cache))
+    implementation(project(CoreModules.styles))
+    implementation(project(CoreModules.utils))
+    implementation(project(FeaturesModules.main))
+
     /** Kotlin */
     implementation(Dependencies.kotlinCoreKtx)
 
@@ -59,6 +65,7 @@ dependencies {
 
     /** LifeCycle */
     implementation(Dependencies.lifecycleRuntime)
+    implementation(Dependencies.lifecycleViewModel)
 
     /** Hilt */
     implementation(Dependencies.hilt)

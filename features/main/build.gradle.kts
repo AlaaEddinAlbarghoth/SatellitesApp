@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    id("kotlin-android")
 }
 
 android {
@@ -34,4 +35,7 @@ dependencies {
 
     /** Kotlin */
     implementation(Dependencies.kotlinCoreKtx)
+    implementation("androidx.appcompat:appcompat:1.4.0")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.2")
 }
