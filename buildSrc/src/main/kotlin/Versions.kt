@@ -4,8 +4,9 @@ object Versions {
     const val java = "1.8"
 
     /** Kotlin */
-    const val kotlin = "1.5.31"
+    const val kotlin = "1.6.10"
     const val kotlinCoreKtx = "0.2"
+    const val kotlinxSerializationJson = "1.3.2"
 
     /** Android */
     const val appCompat = "1.4.0"

@@ -34,4 +34,5 @@ dependencies {
 
     /** Kotlin */
     implementation(Dependencies.kotlinCoreKtx)
+    implementation(Dependencies.kotlinxSerializationJson)
 }

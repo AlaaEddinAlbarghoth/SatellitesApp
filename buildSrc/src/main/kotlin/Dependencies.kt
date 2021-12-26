@@ -2,6 +2,9 @@ object Dependencies {
 
     /** region Kotlin */
     val kotlinCoreKtx by lazy { "androidx.core:core-ktx:${Versions.kotlinCoreKtx}" }
+    val kotlinxSerializationJson by lazy {
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinxSerializationJson}"
+    }
     /** endregion */
 
     /** region Android */
