@@ -21,7 +21,11 @@ object Versions {
     const val hiltViewModelCompiler = "1.0.0"
     const val hiltAndroidPlugin = "2.40.5"
 
+    /** Coroutines */
+    const val coroutines =  "1.3.9"
+
     /** 3rd Party */
+    const val gson = "2.8.9"
     const val timber = "4.7.1"
 
     /** Gradle */

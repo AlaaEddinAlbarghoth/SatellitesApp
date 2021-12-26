@@ -20,6 +20,10 @@ object Dependencies {
     val lifecycleSavedState by lazy { "androidx.lifecycle:lifecycle-viewmodel-savedstate:${Versions.lifecycle}" }
     /** endregion */
 
+    /** region Coroutines */
+    val coroutines by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}" }
+    /** endregion */
+
     /** region Navigation */
     /** endregion */
 
@@ -31,6 +35,7 @@ object Dependencies {
     /** endregion */
 
     /** region 3rd Party */
+    val gson by lazy { "com.google.code.gson:gson:${Versions.gson}" }
     val timber by lazy { "com.jakewharton.timber:timber:${Versions.timber}" }
     /** endregion */
 

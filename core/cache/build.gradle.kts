@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -32,7 +34,21 @@ android {
 
 dependencies {
 
+    /** Local */
+    implementation(project(CoreModules.utils))
+    implementation(project(CoreModules.styles))
+
     /** Kotlin */
     implementation(Dependencies.kotlinCoreKtx)
     implementation(Dependencies.kotlinxSerializationJson)
+
+    /** Hilt */
+    implementation(Dependencies.hilt)
+    kapt(Dependencies.hiltCompiler)
+
+    /** Coroutines */
+    implementation(Dependencies.coroutines)
+
+    /** 3rd Party */
+    implementation(Dependencies.gson)
 }
