@@ -22,7 +22,6 @@
 ## Tech stack & Open-source libraries
 - 100% [Kotlin](https://kotlinlang.org/) based + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
 - [Dagger Hilt](https://dagger.dev/hilt) 2.37
-- [Accompanist](https://github.com/google/accompanist)
 
 - JetPack
   - [Navigation](https://developer.android.com/guide/navigation)
