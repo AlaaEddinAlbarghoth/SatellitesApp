@@ -11,8 +11,6 @@ import com.alaaeddinalbarghoth.satellites.utils.navigation.Screen.Satellites
 /** Base Class to share common functionalities */
 abstract class BaseActivity : AppCompatActivity(), NavigationService {
 
-    override fun finishActivity() = finish()
-
     override fun navigateToActivity(screen: Screen, finishCurrent: Boolean) {
         startActivity(
             Intent(
@@ -21,22 +19,6 @@ abstract class BaseActivity : AppCompatActivity(), NavigationService {
                     Satellites -> SatellitesActivity::class.java
                 }
             )
-        )
-
-        if (finishCurrent)
-            finish()
-    }
-
-    override fun navigateToActivity(screen: Screen, bundle: Bundle, finishCurrent: Boolean) {
-        startActivity(
-            Intent(
-                this,
-                when (screen) {
-                    Satellites -> SatellitesActivity::class.java
-                }
-            ).apply {
-                putExtras(bundle)
-            }
         )
 
         if (finishCurrent)
