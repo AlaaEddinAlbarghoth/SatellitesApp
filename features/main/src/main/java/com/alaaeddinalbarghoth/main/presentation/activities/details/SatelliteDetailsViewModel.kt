@@ -77,7 +77,7 @@ class SatelliteDetailsViewModel @Inject constructor(
         }
     }
 
-    suspend fun loadSatellitesPositions(satelliteId: String) {
+    private suspend fun loadSatellitesPositions(satelliteId: String) {
         when (val result = satellitesUseCase.getPositionsBySatelliteId(satelliteId)) {
             is Empty -> {
                 _empty.value = true
