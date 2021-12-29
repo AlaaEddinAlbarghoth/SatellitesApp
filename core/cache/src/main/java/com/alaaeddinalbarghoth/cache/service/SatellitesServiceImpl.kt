@@ -3,6 +3,7 @@ package com.alaaeddinalbarghoth.cache.service
 import android.content.Context
 import com.alaaeddinalbarghoth.cache.model.details.SatellitesDetails
 import com.alaaeddinalbarghoth.cache.model.list.Satellites
+import com.alaaeddinalbarghoth.cache.model.positions.Positions
 import com.alaaeddinalbarghoth.cache.model.positions.PositionsInfo
 import com.google.gson.Gson
 import java.io.InputStream
@@ -27,10 +28,10 @@ class SatellitesServiceImpl(
         )
     }
 
-    override suspend fun getPositionsInfo(): PositionsInfo {
+    override suspend fun getPositionsInfo(): Positions {
         return gson.fromJson(
             getContainsFromAssetFile("positions.json"),
-            PositionsInfo::class.java
+            Positions::class.java
         )
     }
 

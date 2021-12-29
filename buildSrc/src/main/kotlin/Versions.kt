@@ -6,6 +6,7 @@ object Versions {
     /** Kotlin */
     const val kotlin = "1.6.10"
     const val kotlinCoreKtx = "0.2"
+    const val javaSerializationJson = "1.3.2"
     const val kotlinxSerializationJson = "1.3.2"
 
     /** Android */
@@ -14,7 +15,7 @@ object Versions {
     const val constraintLayout = "2.1.2"
 
     /** LifeCycle */
-    const val lifecycle = "2.4.0"
+    const val lifecycle = "2.4.0-alpha03"
 
     /** Hilt */
     const val hiltViewModel = "1.0.0-alpha03"
@@ -24,9 +25,13 @@ object Versions {
     /** Coroutines */
     const val coroutines =  "1.3.9"
 
+    /** Navigation */
+    const val navigation =  "2.3.5"
+
     /** 3rd Party */
     const val gson = "2.8.9"
     const val timber = "4.7.1"
+    const val lottie = "4.2.2"
 
     /** Gradle */
     const val gradle = "7.0.4"

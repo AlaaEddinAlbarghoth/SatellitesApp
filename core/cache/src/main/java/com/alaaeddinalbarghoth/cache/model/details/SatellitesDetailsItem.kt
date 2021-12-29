@@ -1,13 +1,13 @@
 package com.alaaeddinalbarghoth.cache.model.details
 
-import kotlinx.serialization.SerialName
+import com.google.gson.annotations.SerializedName
 
 data class SatellitesDetailsItem(
-    @SerialName("cost_per_launch")
-    val costPerLaunch: Int,
-    @SerialName("first_flight")
+    @SerializedName("cost_per_launch")
+    val costPerLaunch: String,
+    @SerializedName("first_flight")
     val firstFlight: String,
-    val height: Int,
-    val id: Int,
-    val mass: Int
+    val height: String,
+    val id: String,
+    val mass: String
 )

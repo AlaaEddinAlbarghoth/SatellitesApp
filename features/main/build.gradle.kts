@@ -1,7 +1,9 @@
 plugins {
     id("com.android.library")
     kotlin("android")
-    id("kotlin-android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -22,6 +24,9 @@ android {
             )
         }
     }
+    buildFeatures {
+        dataBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -29,13 +34,39 @@ android {
     kotlinOptions {
         jvmTarget = Versions.java
     }
+    kapt {
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
 
+    /** Local */
+    implementation(project(CoreModules.cache))
+    implementation(project(CoreModules.utils))
+    implementation(project(CoreModules.styles))
+
     /** Kotlin */
     implementation(Dependencies.kotlinCoreKtx)
-    implementation("androidx.appcompat:appcompat:1.4.0")
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.2")
+
+    /** Android */
+    implementation(Dependencies.material)
+    implementation(Dependencies.appCompat)
+    implementation(Dependencies.constraintLayout)
+
+    /** Hilt */
+    implementation(Dependencies.hilt)
+    implementation(Dependencies.hiltViewModel)
+    kapt(Dependencies.hiltCompiler)
+    kapt(Dependencies.hiltViewModelCompiler)
+
+    /** Navigation */
+    implementation(Dependencies.navUi)
+    implementation(Dependencies.navFragment)
+
+    /** LifeCycle */
+    implementation(Dependencies.lifecycleRuntime)
+
+    /** 3rd Party */
+    implementation(Dependencies.lottie)
 }

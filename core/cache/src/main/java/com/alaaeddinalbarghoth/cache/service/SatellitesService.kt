@@ -2,6 +2,7 @@ package com.alaaeddinalbarghoth.cache.service
 
 import com.alaaeddinalbarghoth.cache.model.details.SatellitesDetails
 import com.alaaeddinalbarghoth.cache.model.list.Satellites
+import com.alaaeddinalbarghoth.cache.model.positions.Positions
 import com.alaaeddinalbarghoth.cache.model.positions.PositionsInfo
 
 interface SatellitesService {
@@ -10,5 +11,5 @@ interface SatellitesService {
 
     suspend fun getSatellitesDetails() : SatellitesDetails
 
-    suspend fun getPositionsInfo() : PositionsInfo
+    suspend fun getPositionsInfo() : Positions
 }

@@ -2,6 +2,7 @@ package com.alaaeddinalbarghoth.cache.repository
 
 import com.alaaeddinalbarghoth.cache.model.details.SatellitesDetails
 import com.alaaeddinalbarghoth.cache.model.list.Satellites
+import com.alaaeddinalbarghoth.cache.model.positions.Positions
 import com.alaaeddinalbarghoth.cache.model.positions.PositionsInfo
 import com.alaaeddinalbarghoth.cache.source.SatellitesLocalDataSource
 import com.alaaeddinalbarghoth.utils.dispatcher.DispatcherProvider
@@ -19,6 +20,6 @@ class SatellitesRepositoryImpl(
     override suspend fun getSatellitesDetails(): DataResult<SatellitesDetails> =
         satellitesLocalDataSource.getSatellitesDetails(dispatcher.io)
 
-    override suspend fun getPositionsInfo(): DataResult<PositionsInfo> =
+    override suspend fun getPositionsInfo(): DataResult<Positions> =
         satellitesLocalDataSource.getPositionsInfo(dispatcher.io)
 }

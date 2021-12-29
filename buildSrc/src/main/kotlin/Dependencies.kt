@@ -5,6 +5,9 @@ object Dependencies {
     val kotlinxSerializationJson by lazy {
         "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinxSerializationJson}"
     }
+    val javaSerializationJson by lazy {
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.javaSerializationJson}"
+    }
     /** endregion */
 
     /** region Android */
@@ -25,6 +28,8 @@ object Dependencies {
     /** endregion */
 
     /** region Navigation */
+    val navUi by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.navigation}" }
+    val navFragment by lazy { "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}" }
     /** endregion */
 
     /** region Hilt */
@@ -37,6 +42,7 @@ object Dependencies {
     /** region 3rd Party */
     val gson by lazy { "com.google.code.gson:gson:${Versions.gson}" }
     val timber by lazy { "com.jakewharton.timber:timber:${Versions.timber}" }
+    val lottie by lazy { "com.airbnb.android:lottie:${Versions.lottie}" }
     /** endregion */
 
     /** region Test */

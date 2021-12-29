@@ -20,4 +20,9 @@
         <item name="android:windowDisablePreview">true</item>
     </style>
 
+    <!-- Toolbar theme -->
+    <style name="ToolbarStyle">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
 </resources>

@@ -3,7 +3,7 @@ package com.alaaeddinalbarghoth.satellites.utils.base
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.alaaeddinalbarghoth.main.SatellitesActivity
+import com.alaaeddinalbarghoth.main.presentation.activities.SatellitesActivity
 import com.alaaeddinalbarghoth.satellites.utils.navigation.NavigationService
 import com.alaaeddinalbarghoth.satellites.utils.navigation.Screen
 import com.alaaeddinalbarghoth.satellites.utils.navigation.Screen.Satellites
