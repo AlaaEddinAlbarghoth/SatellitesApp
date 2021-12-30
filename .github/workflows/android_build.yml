@@ -7,12 +7,16 @@ on:
     branches: [ master ]
 
 jobs:
-    build:
-      # Github Runner
-      runs-on: ubuntu-latest
-      # Checkout the code
-      steps:
-        - uses: actions/checkout@v2.4.0
+  build:
+    # Github Runner
+    runs-on: ubuntu-latest
+    # Checkout the code
+    steps:
+      - uses: actions/checkout@v2.4.0
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'gradle'
 
         - name: Setup Java JDK
           uses: actions/setup-java@v2.5.0
